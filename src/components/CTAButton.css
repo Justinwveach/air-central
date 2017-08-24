@@ -1,0 +1,16 @@
+.CTAButton {
+    background-color: rgba(0,0,0,0);
+    color: #dee3e5;
+    border: 1px solid #dee3e5;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: .5rem 1rem;
+    transition: all .3s ease;
+    margin: auto;
+    font-size: 1.25rem;
+}
+
+.CTAButton:hover {
+    background-color: #dee3e5;
+    color: #1e4d79;
+}

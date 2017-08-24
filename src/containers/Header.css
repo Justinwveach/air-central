@@ -1,0 +1,39 @@
+.Header {
+    width: 100%;
+}
+
+.Header-container {
+    position: relative;
+}
+
+.Header-content {
+    background: #1e4d79;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(30,77,121,0), rgba(30,77,121,1));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(30,77,121,.8), rgba(29,136,182,.8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: relative;
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.Header-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat:no-repeat !important;
+    background-position: center center !important;
+    background-size: cover !important;
+}
+
+.Header-home {
+    background: url('../images/stairs-home-loft-lg.jpg');
+}
+
+.Header h1 {
+    color: #dee3e5;
+    text-align: center;
+    margin-bottom: 2rem;
+}

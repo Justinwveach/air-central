@@ -1,5 +1,5 @@
 {
-  "name": "justin-veach",
+  "name": "air-central",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -26,12 +26,12 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Justinwveach/justin-veach.git"
+    "url": "git+https://github.com/Justinwveach/air-central.git"
   },
   "author": "Justin Veach",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Justinwveach/justin-veach/issues"
+    "url": "https://github.com/Justinwveach/air-central/issues"
   },
-  "homepage": "https://github.com/Justinwveach/justin-veach#readme"
+  "homepage": "https://github.com/Justinwveach/air-central#readme"
 }

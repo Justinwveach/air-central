@@ -19,7 +19,7 @@ class App extends Component {
 
         console.log(this.props.windowWidth + '' + constants.MAX_MOBILE_WIDTH);
         if (this.props.windowWidth > constants.MAX_MOBILE_WIDTH) {
-            containerCssClasses += ' sidebar-content-offset';
+            //containerCssClasses += ' sidebar-content-offset';
         }
 
         var currentPath = window.location.pathname
@@ -33,9 +33,7 @@ class App extends Component {
                         <Routes />
                     </div>
 
-                    {!currentPath.includes('Travel')
-                    ? <Footer />
-                    : null }
+                    <Footer />
                 </div>
             </div>
         </div>
