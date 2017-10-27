@@ -1,23 +1,61 @@
 import React, { Component } from 'react';
 import './Contact.css';
+import TextField from '../components/TextField';
+import Footer from './Footer';
 
 class Contact extends Component {
+
+    constructor(props) {
+        super(props);
+    }
+
   render() {
+      let title = "Get In Touch";
+      let subTitle;
+      let classNames = "Contact page-section";
+      if (window.location.pathname.includes("Contact")) {
+          classNames = classNames + " standalone Contact-colored";
+          title = "Contact Us";
+          subTitle = (<p className="subtitle">Contact us to get a free quote or schedule an appointment.</p>)
+      } else {
+          classNames = classNames + " Contact-light";
+      }
     return (
-      <div className="Contact container">
-          <h1>Get In Touch</h1>
-          <form>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="`1`" aria-describedby="emailHelp" placeholder="Enter email" />
-                <small id="emailHelp" class="form-text text-muted">Well never share your email with anyone else.</small>
+      <div className={classNames}>
+          <h1>{title}</h1>
+          {subTitle}
+          <div className="form-container">
+              <form action="https://wdutayif35.execute-api.us-east-1.amazonaws.com/prod/sendMail">
+              <div className="row">
+                <div className="col col-sm-12 col-md-6">
+                    <TextField fieldName="First Name" refName="txtFirstName" inputType="textfield" type="text" />
+                </div>
+                <div className="col col-sm-12 col-md-6">
+                    <TextField fieldName="Last Name" refName="txtLastName" inputType="textfield" type="text" />
+                </div>
               </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"/>
+              <div className="row">
+                <div className="col col-sm-12 col-md-6">
+                    <TextField fieldName="Email" refName="txtEmail" inputType='textfield' textType="email" pattern="[^ @]*@[^ @]*" />
+                </div>
+                <div className="col col-sm-12 col-md-6">
+                    <TextField fieldName="Phone Number" refName="txtPhoneNumber" inputType='textfield' textType="tel" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}"/>
+                </div>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+                <div className="row">
+                    <div className="col col-sm-12">
+                        <TextField fieldName="Comments" refName="txtComments" inputType='textarea'/>
+                    </div>
+                </div>
+
+                <div className="row">
+                    <div className="col col-sm-12">
+                        <input type="submit"/>
+                    </div>
+                </div>
+
+                </form>
+            </div>
       </div>
     );
   }

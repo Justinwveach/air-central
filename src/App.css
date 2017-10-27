@@ -72,7 +72,17 @@
 
 
 /* No media query since this is the default in Bootstrap */
+@media (max-width: 991px) {
+    .page-section{
+        padding: 4rem 5%;
+    }
+}
 
+@media (max-width: 767px) {
+    .flex-stack-sm {
+        flex-direction: column;
+    }
+}
 
 /* Small devices (tablets, 768px and up) */
 
@@ -88,6 +98,10 @@
 @media (min-width: 992px) {
     .hidden-md {
         display: none;
+    }
+
+    .page-section {
+        padding: 4rem 15%;
     }
 }
 

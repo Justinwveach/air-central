@@ -1,0 +1,27 @@
+.Service {
+    position: relative;
+    flex: 1;
+    border-radius: 10px;
+    margin: 2rem;
+    padding: 0 1rem 1rem 1rem;
+    box-shadow: 0 0 30px 6px rgba(31,51,73,.25);
+    min-width: 200px;
+    min-height: 150px;
+    text-align: center;
+}
+
+.Service .icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 9999px;
+    background-color: rgb(66, 100, 251);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -40px;
+}
+
+.Service h4 {
+    padding-top: 50px;
+    color: rgb(66, 100, 251) !important;
+}

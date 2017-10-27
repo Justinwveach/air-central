@@ -47,12 +47,11 @@ class Navbar extends Component {
 
         return (
             <div className="Navbar">
+                <div className="logo">Air Central</div>
                 <div className="Navbar-table">
                     <ul id="horizontal-list">
                         <li><Link to="/">Home</Link></li>
-                        <li><Link to="/Travel">Travel</Link></li>
-                        <li><Link to="/Trading">Trading</Link></li>
-                        <li><Link to="/Resume">Resume</Link></li>
+                        <li><Link to="/Services">Services</Link></li>
                         <li><Link to="/Contact">Contact</Link></li>
                     </ul>
                 </div>

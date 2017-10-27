@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
 }
 
@@ -19,8 +19,13 @@ input[type=file] {
   width: 100%;
 }
 
+input:focus {
+    outline: none !important;
+}
+
 h1 {
     font-size: 2.5rem;
+    margin-bottom: 1rem !important;
 }
 h2 {
     font-size: 2rem;
@@ -34,8 +39,9 @@ h4 {
 
 h1, h2, h3, h4, h5, h6 {
     color: #333;
-    font-family: 'PT Serif', serif;
+    font-family: 'Alegreya Sans', sans-serif; /*'PT Serif', serif;*/
     font-weight: 600;
+    margin-top: 0;
 }
 
 .hidden {
@@ -45,7 +51,11 @@ h1, h2, h3, h4, h5, h6 {
 .content-container {
     padding-left: 15%;
     padding-right: 15%;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     width: 100%;
+}
+
+.standalone {
+    padding-top: 90px !important; /*this is a stand alone page so make sure it sits below the navbar */
 }

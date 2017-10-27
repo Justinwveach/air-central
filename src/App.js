@@ -11,6 +11,8 @@ import Footer from './containers/Footer';
 import './App.css';
 import windowSize from 'react-window-size';
 import * as constants from './Constants';
+import CTABanner from './containers/CTABanner';
+import Contact from './containers/Contact';
 
 class App extends Component {
     render() {
@@ -24,17 +26,28 @@ class App extends Component {
 
         var currentPath = window.location.pathname
 
+        let ctaBanner;
+        if (!currentPath.includes("Contact")) {
+            ctaBanner = (
+                <div>
+                <CTABanner />
+                </div>
+            )
+        }
+
      return (
          <div className="App">
-            <Navbar />
+            {/* <Navbar />*/}
             <div className={containerCssClasses}>
                 <div className="App-content">
                     <div className="App-page-content">
                         <Routes />
                     </div>
+                    {ctaBanner}
 
                     <Footer />
                 </div>
+                <Navbar />
             </div>
         </div>
      );

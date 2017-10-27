@@ -3,22 +3,29 @@ import './Header.css';
 import CTAButton from '../components/CTAButton';
 
 class Header extends Component {
-  render() {
-      const classes = "Header-" + this.props.headerPage + " Header-background";
 
-    return (
-      <div className="Header">
-        <div className="Header-container">
-            <div className={classes}></div>
+    constructor(props) {
+        super(props);
+    }
 
-            <div className="Header-content">
-                <h1>{this.props.title}</h1>
+    render() {
+    const classes = "Header-" + this.props.headerPage + " Header-background";
+
+        return (
+          <header className="Header">
+            <div className="Header-container">
+                <div className={classes}></div>
+
+                <div className="Header-content">
+                    <h1>{this.props.title}</h1>
+                    <p className="Header-tagline">{this.props.tagline}</p>
                     <CTAButton title="Contact Us Today" visibility={this.props.hideButton} />
+                    <a className="tel" href="tel:6624490213">662-449-0213</a>
+                </div>
             </div>
-        </div>
-      </div>
-    );
-  }
+          </header>
+        );
+    }
 }
 
 export default Header;

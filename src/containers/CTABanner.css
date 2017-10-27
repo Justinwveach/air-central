@@ -1,0 +1,18 @@
+.CTABanner {
+    position: relative;
+    width: 100%;
+    background-color: rgba(66, 100, 251, 1);/* rgb(245,245,245);/* #0f0c29;*/
+    position: relative;
+    color: white;
+    text-align: center;
+    color: white;/* #555;*/
+}
+
+.telephone {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.CTABanner, .telephone, h3 {
+    color: white !important;/* #666 !important;*/
+}

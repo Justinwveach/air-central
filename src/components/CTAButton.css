@@ -8,6 +8,7 @@
     transition: all .3s ease;
     margin: auto;
     font-size: 1.25rem;
+    border-radius: 9999px;
 }
 
 .CTAButton:hover {
