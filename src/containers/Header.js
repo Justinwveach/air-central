@@ -20,7 +20,7 @@ class Header extends Component {
                     <h1>{this.props.title}</h1>
                     <p className="Header-tagline">{this.props.tagline}</p>
                     <CTAButton title="Contact Us Today" visibility={this.props.hideButton} />
-                    <a className="tel" href="tel:6624490213">662-449-0213</a>
+                    <a className="Header-tel" href="tel:6624490213">662-449-0213</a>
                 </div>
             </div>
           </header>

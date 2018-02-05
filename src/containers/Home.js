@@ -11,24 +11,24 @@ class Home extends Component {
     return (
       <div className="Home">
         <Header title="Air Central Heating & Cooling" tagline="DeSoto County's Premier Air Conditioning & Heating Service for over 20 years" headerPage="home" hideButton="" />
-        <div className='main-container'>
-            <div className="row-container flex-stack-sm">
-                <div className="side">
-                    <div className='blurb blurb-sm'>
+        <div className="Home-mainContainer">
+            <div className="Home-rowContainer flex-stack-sm">
+                <div className="Home-side">
+                    <div className='Home-blurb Home-blurb-sm'>
                         <h2>{airCentralTitle}</h2>
                         {airCentralText}
                     </div>
                 </div>
-                <div className="side img-side">
-                    <img className="img-icon img-icon-sm right" src={require('../images/tools-2.jpg')}/>
+                <div className="Home-side Home-imgSide">
+                    <img className="Home-icon Home-icon-sm Home-right" src={require('../images/tools-2.jpg')}/>
                 </div>
             </div>
-            <div className="row-container flex-stack-sm">
-                <div className="side img-side">
-                    <img className="img-icon left" src={require('../images/house.jpeg')}/>
+            <div className="Home-rowContainer flex-stack-sm">
+                <div className="Home-side Home-imgSide">
+                    <img className="Home-icon Home-left" src={require('../images/house.jpeg')}/>
                 </div>
-                <div className="side">
-                    <div className='blurb blurb-sm'>
+                <div className="Home-side">
+                    <div className="Home-blurb Home-blurb-sm">
                         <h2>{familyOwnedTitle}</h2>
                         {familyOwnedText}
                     </div>

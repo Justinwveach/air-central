@@ -8,11 +8,11 @@
     color: white;/* #555;*/
 }
 
-.telephone {
+.CTABanner-telephone {
     font-size: 2rem;
     font-weight: 600;
 }
 
-.CTABanner, .telephone, h3 {
+.CTABanner, .CTABanner-telephone, h3 {
     color: white !important;/* #666 !important;*/
 }

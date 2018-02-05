@@ -1,18 +1,22 @@
-.Home .lander {
+.Home {
+
+}
+
+.Home-lander {
   padding: 80px 0;
   text-align: center;
 }
 
-.Home .lander h1 {
+.Home-lander h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
 }
 
-.Home .lander p {
+.Home-lander p {
   color: #999;
 }
 
-.img-icon {
+.Home-icon {
     width: 100%;
     height: auto;
     border-radius: 5px;
@@ -20,15 +24,15 @@
     box-shadow: 0 0 30px 6px rgba(31,51,73,.25);
 }
 
-.left {
+.Home-left {
     left: -5px;
 }
 
-.right {
+.Home-right {
     left: 5px;
 }
 
-.blurb {
+.Home-blurb {
     font-size: 1.1rem;
     line-height: 1.7rem;
     padding: 0 4rem;
@@ -40,28 +44,28 @@
     height: 100%;
 }
 
-.main-container {
+.Home-mainContainer {
     padding: 2rem 0;
 }
-.row-container {
+.Home-rowContainer {
     display: flex;
     flex-direction: row;
     position: relative;
     padding: 2rem 0;
 }
 
-.side {
+.Home-side {
     flex: 1;
     position: relative;
     vertical-align: middle;
 }
 
 @media (max-width: 767px) {
-    .blurb-sm {
+    .Home-blurb-sm {
         padding: 1rem;
     }
 
-    .img-icon-sm {
+    .Home-icon-sm {
         width: 100%;
         height: 300px;
         left: 0;
@@ -69,15 +73,15 @@
         border-radius: 0;
     }
 
-    .main-container {
+    .Home-mainContainer {
         padding: 0;
     }
 
-    .img-side {
+    .Home-imgSide {
         order: 2;
     }
 
-    .row-container {
+    .Home-rowContainer {
         padding: 2rem 0;
     }
 }

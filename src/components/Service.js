@@ -7,7 +7,7 @@ class Service extends Component {
         return (
             <div>
             <div className="Service">
-                <div className="icon"></div>
+                <div className="Service-icon"></div>
                 <h4>{this.props.title}</h4>
                 <p>{this.props.description}</p>
             </div>

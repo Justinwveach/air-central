@@ -7,15 +7,11 @@
     align-content: center;
 }
 
-.Contact-standalone {
-
-}
-
-.Contact-light {
+.Contact--light {
     background-color: rgb(245,245,245);/* #0f0c29;*/
 }
 
-.Contact-colored {
+.Contact--colored {
     background: #1e4d79;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #cb2d3e, #ef473a);/* #34e89e, #0f3443);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #cb2d3e, #ef473a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -26,11 +22,11 @@ h1 {
     color: white !important;
 }
 
-.form-container {
+.Contact-formContainer {
     width: 100%;
 }
 
-input[type="submit"] {
+.Contact input[type="submit"] {
     background-color: white;
     width: 100%;
     color: #cb2d3e;
@@ -41,15 +37,15 @@ input[type="submit"] {
     font-weight: 900;
 }
 
-input[type="submit"]:hover {
+.Contact input[type="submit"]:hover {
     background-color: rgba(255, 255, 255, .9);
 }
 
-.subtitle {
+.Contact-subtitle {
     color: white;
 }
 
-.Contact-extra-info li, .Contact-extra-info a {
+.Contact-extraInfo li, .Contact-extraInfo a {
     list-style: none;
     color: white;
 }

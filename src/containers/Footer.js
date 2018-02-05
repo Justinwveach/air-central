@@ -5,7 +5,7 @@ class Footer extends Component {
   render() {
     return (
       <div className="Footer page-section">
-        <div className="row-container side-by-side flex-stack-sm">
+        <div className="Footer-rowContainer Footer-sideBySide flex-stack-sm">
             <div className=''>
               <h5>Address</h5>
               <ul>
@@ -34,7 +34,7 @@ class Footer extends Component {
               <div className="row">
                 <div id="footerBottom">
                     <img id="imgBBB" src={require('../images/bbb.png')}/>
-                    <span>&copy; 2017 Air Central</span>
+                    <span>&copy; 2018 Air Central</span>
                     <img id="imgLogo" src={require('../images/air-central-logo.png')} />
                 </div>
               </div>

@@ -14,7 +14,7 @@
     float: right;
 }
 
-ul#horizontal-list li {
+ul#horizontalList li {
 	display: inline;
 }
 
@@ -35,7 +35,7 @@ ul#horizontal-list li {
     padding: .5rem;
 }
 
-.logo {
+.Navbar-logo {
     float: left;
     color: white;
     font-size: 1.2rem;

@@ -14,17 +14,17 @@ class Contact extends Component {
       let subTitle;
       let classNames = "Contact page-section";
       if (window.location.pathname.includes("Contact")) {
-          classNames = classNames + " standalone Contact-colored";
+          classNames = classNames + " standalone Contact--colored";
           title = "Contact Us";
-          subTitle = (<p className="subtitle">Contact us to get a free quote or schedule an appointment.</p>)
+          subTitle = (<p className="Contact-subtitle">Contact us to get a free quote or schedule an appointment.</p>)
       } else {
-          classNames = classNames + " Contact-light";
+          classNames = classNames + " Contact--light";
       }
     return (
       <div className={classNames}>
           <h1>{title}</h1>
           {subTitle}
-          <div className="form-container">
+          <div className="Contact-formContainer">
               <form action="https://wdutayif35.execute-api.us-east-1.amazonaws.com/prod/sendMail">
               <div className="row">
                 <div className="col col-sm-12 col-md-6">

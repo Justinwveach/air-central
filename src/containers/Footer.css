@@ -8,13 +8,13 @@
     padding-left: 0;
 }
 
-.Footer li, .Footer a, Footer h3, #footerBottom {
+.Footer li, .Footer a, .Footer h3, #footerBottom {
     color: #777;/* #999;*/
     list-style: none;
     font-size: .8rem;
 }
 
-h5 {
+.Footer h5 {
     color: #777 !important;
 }
 
@@ -44,11 +44,11 @@ h5 {
     display: inline-block;
 }
 
-.Footer .row-container {
+.Footer-rowContainer {
     display: flex;
     justify-content: space-between;
 }
 
-.side-by-side {
+.Footer-sideBySide{
     flex-direction: row;
 }

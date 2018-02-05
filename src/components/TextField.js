@@ -28,7 +28,7 @@ class TextField extends Component {
 
         if (this.props.inputType === 'textfield') {
             inputToDisplay = (
-                <input className='input-text' type={this.props.textType} pattern={this.props.pattern} ref={this.props.refName} onFocus={this.onInputFocus} onBlur={this.onInputFocus} required />
+                <input className='TextField-inputText' type={this.props.textType} pattern={this.props.pattern} ref={this.props.refName} onFocus={this.onInputFocus} onBlur={this.onInputFocus} required />
             )
         } else {
             inputToDisplay = (
@@ -37,8 +37,8 @@ class TextField extends Component {
         }
 
         return (
-            <div className={[this.state.focusToggle, 'input-block'].join(' ')}>
-                <label className={[this.state.focusToggle, 'input-label'].join(' ')}>{this.props.fieldName}</label>
+            <div className={[this.state.focusToggle, 'TextField-inputBlock', 'TextField'].join(' ')}>
+                <label className={[this.state.focusToggle, 'TextField-inputLabel'].join(' ')}>{this.props.fieldName}</label>
                 {inputToDisplay}
             </div>
         );

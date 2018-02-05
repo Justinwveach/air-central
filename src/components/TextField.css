@@ -1,4 +1,4 @@
-input, textarea {
+.TextField input, textarea {
     width: 100%;
     height: 100%;
     background-color: transparent;
@@ -14,12 +14,12 @@ input, textarea {
     padding-left: 0px !important;
 }
 
-textarea {
+.TextField textarea {
     height: 150px;
     resize: none;
 }
 
-textarea:focus {
+.TextField textarea:focus {
     outline: none;
 }
 
@@ -27,7 +27,7 @@ textarea:focus {
     margin-bottom: 15px;
 }
 
-.input-label {
+.TextField-inputLabel {
     position: absolute;
     /*font-size: 12px;*/
     -webkit-transition: all .25s; /* Safari */
@@ -38,19 +38,19 @@ textarea:focus {
     line-height: 30px;
 }
 
-.input-label.not-focused {
+.TextField-inputLabel.not-focused {
     transform-origin: top left;
     margin-top: 0px;
     margin: 8px 0px;
 }
 
-.input-label.focused {
+.TextField-inputLabel.focused {
     transform: scale(.65);
     transform-origin: top left;
     margin-top: -10px;
 }
 
-.input-block {
+.TextField-inputBlock {
     position: relative;
     -webkit-transition: background-color .25s; /* Safari */
     transition: background-color .25s;
@@ -58,10 +58,10 @@ textarea:focus {
     border-radius: 3px;
 }
 
-.input-block.focused {
+.TextField-inputBlock.focused {
     background-color: rgba(255, 255, 255, .9);
 }
 
-.input-block.not-focused {
+.TextField-inputBlock.not-focused {
     background-color: rgba(255, 255, 255, 0.5);
 }

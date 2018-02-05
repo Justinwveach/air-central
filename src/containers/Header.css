@@ -8,6 +8,7 @@
 
 .Header-content {
     background: #1e4d79;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(0,198,255,0), rgba(0,114,255,1));/* rgba(30,77,121,0), rgba(30,77,121,1));  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, rgba(67, 95, 206,.93), rgba(66, 100, 251,.93)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     position: relative;
@@ -44,12 +45,12 @@
     margin-bottom: 2rem;
 }
 
-.tel {
+.Header-tel {
     color: white;
-    margin-top: .25rem;
+    margin-top: .5rem;
     margin-bottom: 1rem;
 }
 
-.tel:hover {
+.Header-tel:hover {
     color: white;
 }
