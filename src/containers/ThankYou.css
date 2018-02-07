@@ -1,0 +1,19 @@
+.ThankYou {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    background-color: blue;
+    background: #29c569;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #29c569, #3a9e63);/* #34e89e, #0f3443);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #29c569, #3a9e63); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.ThankYou-content {
+    padding: 4rem 0;
+}
+
+.ThankYou h1, .ThankYou h3 {
+    color: white;
+}
