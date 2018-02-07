@@ -25,7 +25,7 @@ class Service extends Component {
 
         return (
             <div>
-            <div className="Service">
+            <div className="Service Service-sm">
                 <div className="Service-icon">
                     <img src={getImg(this.props.icon)} />
                 </div>

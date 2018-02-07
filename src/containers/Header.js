@@ -18,7 +18,7 @@ class Header extends Component {
 
                 <div className="Header-content">
                     <h1>{this.props.title}</h1>
-                    <p className="Header-tagline">{this.props.tagline}</p>
+                    <p className="Header-tagline">{this.props.tagline}<br/>{this.props.taglineSubtext}</p>
                     <CTAButton title="Contact Us Today" visibility={this.props.hideButton} />
                     <a className="Header-tel" href="tel:6624490213">662-449-0213</a>
                 </div>

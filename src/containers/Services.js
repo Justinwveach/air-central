@@ -6,14 +6,15 @@ import Testimonials from '../containers/Testimonials';
 class Services extends Component {
   render() {
 
-      let heatingServices = ["Furnace Replacement", "Service & Repair", "Preventative Maintenace", "Leak Detection", "Expandables"];
-      let airServices = ["Air Conditioner Replacement", "Service and Repair", "Preventative Maintenance", "Coil Cleaning", "Leak Detection", "Condensate Drains", "Expandables"];
-      let otherServices = ["Thermostats", "Duct Work", "Filters"];
+      let heatingServices = ["Preventative Maintenace", "Service and Repair", "Gas, Electric, and Heat Pumps", "Gas Piping", "Furnace Replacement"];
+      let airServices = ["Air Conditioner Replacement", "Service and Repair", "Preventative Maintenance", "Coil Cleaning", "Leak Detection", "Condensate Drains", "Commercial Refrigeration and Cooling"];
+      let otherServices = ["Commercial Heating, Cooling, and Refrigeration", "Free Estimates", "Custom Homes", "Thermostats", "Duct Work", "Filters", "Expandables", "Sheet Metal Fabrication", "Minor Electrical and Plumbing Repair", "Mold Remediation"];
       return (
           <div className="Services">
-                <Header title="Heating & Air Services" tagline="We perform the most economical work on all Makes and Models" headerPage="services" hideButton="" />
+                <Header title="Heating & Air Services" tagline="We practice the most economical and reliable repair methods on all makes and models." headerPage="services" hideButton="" />
 
-                <section className="Services-blurb page-section">
+                <div className="page-section">
+                <section className="Services-blurb">
 
                     <div className="row">
                             <h2>Replace</h2>
@@ -34,11 +35,12 @@ class Services extends Component {
                     </div>
                 </section>
 
-                <section className="Services-container page-section">
+                <section className="Services-container">
                     <Service title="Heating" description={heatingServices} icon="heat" />
-                    <Service title="Cooling" description={airServices} icon="cool" />
                     <Service title="Other" description={otherServices} icon="more-icon-white" />
+                    <Service title="Cooling" description={airServices} icon="cool" />
                 </section>
+                </div>
             </div>
         );
     }
