@@ -33,9 +33,9 @@ class Footer extends Component {
               </div>
               <div className="row">
                 <div id="footerBottom">
-                    <img id="imgBBB" src={require('../images/bbb.png')}/>
-                    <span>&copy; 2018 Air Central</span>
-                    <img id="imgLogo" src={require('../images/air-central-logo.png')} />
+                    <img id="imgBBB" className="hidden-sm" src={require('../images/bbb.png')}/>
+                    <span>&copy; 2018 Air Central All Rights Reserved</span>
+                    <img id="imgLogo" className="hidden-sm" src={require('../images/air-central-logo-blue.png')} />
                 </div>
               </div>
              </div>

@@ -13,6 +13,6 @@
     font-weight: 600;
 }
 
-.CTABanner, .CTABanner-telephone, h3 {
+.CTABanner, .CTABanner-telephone, .CTABanner h3 {
     color: white !important;/* #666 !important;*/
 }

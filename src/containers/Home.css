@@ -64,9 +64,13 @@
     vertical-align: middle;
 }
 
+.Home-boldText {
+    font-weight: bold;
+}
+
 @media (max-width: 767px) {
     .Home-blurb-sm {
-        padding: 1rem;
+        padding: 2rem;
     }
 
     .Home-icon-sm {

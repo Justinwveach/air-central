@@ -39,7 +39,7 @@ class Contact extends Component {
                     <TextField fieldName="Email" refName="txtEmail" inputType='textfield' textType="email" pattern="[^ @]*@[^ @]*" />
                 </div>
                 <div className="col col-sm-12 col-md-6">
-                    <TextField fieldName="Phone Number" refName="txtPhoneNumber" inputType='textfield' textType="tel" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}"/>
+                    <TextField fieldName="Phone Number" refName="txtPhoneNumber" inputType='textfield' textType="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}"/>
                 </div>
               </div>
                 <div className="row">
@@ -50,7 +50,7 @@ class Contact extends Component {
 
                 <div className="row">
                     <div className="col col-sm-12">
-                        <input type="submit"/>
+                        <input type="submit" value="Submit"/>
                     </div>
                 </div>
 

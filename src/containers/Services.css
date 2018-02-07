@@ -3,21 +3,20 @@
 }
 
 .Services-blurb {
-    padding: 40px;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+    margin: 0 auto;
 }
 
 @media (min-width: 768px) {
     .Services-blurb p {
-        border-left: 4px solid lightgray;
-        border-right: 4px solid lightgray;
-        padding-left: 20px;
-        padding-right: 20px;
+        border-left: 0px solid lightgray;
+        border-right: 0px solid lightgray;
     }
 
     .Services-container {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        margin: 0 auto;
     }
 }

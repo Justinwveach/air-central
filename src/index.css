@@ -15,6 +15,14 @@ input.form-control {
   font-size: 16px;
 }
 
+input:required {
+    box-shadow:none;
+}
+
+input:invalid {
+    box-shadow:0 0 0px red;
+}
+
 input[type=file] {
   width: 100%;
 }
@@ -58,4 +66,53 @@ h1, h2, h3, h4, h5, h6 {
 
 .standalone {
     padding-top: 90px !important; /*this is a stand alone page so make sure it sits below the navbar */
+}
+
+
+/* Extra small devices (phones, less than 768px) */
+
+
+/* No media query since this is the default in Bootstrap */
+@media (max-width: 991px) {
+    .page-section{
+        padding: 4rem 5%;
+    }
+}
+
+@media (max-width: 767px) {
+    .flex-stack-sm {
+        flex-direction: column;
+    }
+
+    .hidden-sm {
+        display: none;
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .hidden-md {
+        display: none;
+    }
+
+    .page-section {
+        padding: 4rem 15%;
+    }
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .hidden-lg {
+        display: none;
+    }
 }

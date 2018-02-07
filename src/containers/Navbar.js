@@ -47,7 +47,10 @@ class Navbar extends Component {
 
         return (
             <div className="Navbar">
-                <div className="Navbar-logo">Air Central</div>
+                <div className="Navbar-logo">
+                    <img id="imgLogo" src={require('../images/air-central-logo.png')} />
+                    <span className="hidden-sm">Air Central</span>
+                </div>
                 <div className="Navbar-table">
                     <ul id="horizontalList">
                         <li><Link to="/">Home</Link></li>

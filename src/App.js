@@ -13,6 +13,7 @@ import windowSize from 'react-window-size';
 import * as constants from './Constants';
 import CTABanner from './containers/CTABanner';
 import Contact from './containers/Contact';
+import Testimonials from './containers/Testimonials';
 
 class App extends Component {
     render() {
@@ -43,8 +44,8 @@ class App extends Component {
                     <div className="App-page-content">
                         <Routes />
                     </div>
+                    <Testimonials/>
                     {ctaBanner}
-
                     <Footer />
                 </div>
                 <Navbar />
