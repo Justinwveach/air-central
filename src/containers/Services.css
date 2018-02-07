@@ -20,3 +20,10 @@
         margin: 0 auto;
     }
 }
+
+@media (max-width: 768px) {
+    .Services-blurb-sm {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

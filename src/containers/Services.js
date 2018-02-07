@@ -14,7 +14,7 @@ class Services extends Component {
                 <Header title="Heating & Air Services" tagline="We practice the most economical and reliable repair methods on all makes and models." headerPage="services" hideButton="" />
 
                 <div className="page-section">
-                <section className="Services-blurb">
+                <section className="Services-blurb Services-blurb-sm">
 
                     <div className="row">
                             <h2>Replace</h2>
@@ -37,8 +37,8 @@ class Services extends Component {
 
                 <section className="Services-container">
                     <Service title="Heating" description={heatingServices} icon="heat" />
-                    <Service title="Other" description={otherServices} icon="more-icon-white" />
                     <Service title="Cooling" description={airServices} icon="cool" />
+                    <Service title="Other" description={otherServices} icon="more-icon-white" />
                 </section>
                 </div>
             </div>
