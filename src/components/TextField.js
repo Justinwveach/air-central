@@ -28,11 +28,11 @@ class TextField extends Component {
 
         if (this.props.inputType === 'textfield') {
             inputToDisplay = (
-                <input className='TextField-inputText' type={this.props.textType} pattern={this.props.pattern} ref={this.props.refName} onFocus={this.onInputFocus} onBlur={this.onInputFocus} required />
+                <input id={this.props.id} className="TextField-inputText" type={this.props.textType} pattern={this.props.pattern} ref={this.props.refName} onFocus={this.onInputFocus} onBlur={this.onInputFocus} onChange={this.props.onChange} required />
             )
         } else {
             inputToDisplay = (
-                <textarea ref={this.props.refName} onFocus={this.onInputFocus} onBlur={this.onInputFocus} />
+                <textarea id={this.props.id} ref={this.props.refName} onFocus={this.onInputFocus} onBlur={this.onInputFocus} onChange={this.props.onChange} />
             )
         }
 
